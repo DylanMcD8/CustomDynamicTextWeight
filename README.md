@@ -4,10 +4,10 @@ Dynamic Text is a great way to increase your app's accessibilty, but it comes wi
 Just add this function outside a class somewhere in your project:
 
         func makeDynamic(label: UILabel?, style: UIFont.TextStyle, weight: UIFont.Weight) {
-         if let label = label {
-               label.font = UIFont.preferredFont(forTextStyle: style)
-             label.font = UIFont.systemFont(ofSize: label.font.pointSize, weight: weight)
-         }
+                if let label = label {
+                        label.font = UIFont.preferredFont(forTextStyle: style)
+                        label.font = UIFont.systemFont(ofSize: label.font.pointSize, weight: weight)
+                }
         }
 
 And to use: `makeDynamic(label: notesTitle, style: .footnote, weight: .medium)`
