@@ -12,5 +12,13 @@ Just add this function outside a class somewhere in your project:
 
 And to use: `makeDynamic(label: notesTitle, style: .footnote, weight: .medium)`
 
-Free to everyone, no credit needed. If you have suggestions for improving, please open an Issue or PR.
+To make the labels update, add this function to your class: 
 
+        override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+                if previousTraitCollection?.preferredContentSizeCategory != traitCollection.preferredContentSizeCategory {
+                 // Put the code here. I suggest making a function, like setLabelSizes(), and calling that at setup and here.
+                }
+        }
+
+Free to everyone, no credit needed. If you have suggestions for improving, please open an Issue or PR.
