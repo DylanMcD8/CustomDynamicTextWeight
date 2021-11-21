@@ -21,4 +21,4 @@ To make the labels update, add this function to your class:
                 }
         }
 
-Free to everyone, no credit needed. If you have suggestions for improving, please open an Issue or PR.
+Free to everyone. Credit not necessary, but always appreciated. If you have suggestions for improving, please open an Issue or PR.
